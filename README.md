@@ -17,12 +17,6 @@ You should read [this article](https://www.freecodecamp.org/forum/t/how-to-deplo
 # clone this repository 
 git clone https://github.com/erika-dorset/bewd_mern-full-stack-login
 
-# go inside the root folder
-cd mern-full-stack
-
-# install dependencies if they aren't there
-npm install
-
 # run your development server
 npm run dev
 ```
@@ -34,6 +28,9 @@ Heroku is one of the popular hosting platforms to deploy your application. It's 
 
 ###### Make sure you prepare your poroject for production
 ```linux
+#add the uri parameter
+export MONGOLAB_URI="mongodb+srv://<USERNAME>:<PASSWORD>@<COLLECTION_NAME>-bm6td.mongodb.net/<DBNAME>?retryWrites=true"
+
 # build for production
 npm run build
 
